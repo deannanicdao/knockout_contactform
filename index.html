@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Knockout example</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js" integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA==" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div>
+            <h1>Contact</h1>
+            <p>First name: <input data-bind="value: firstName" /></p>
+            <p>Last name: <input data-bind="value: lastName" /></p>
+            <p>Email: <input type="email" data-bind="value: email" /></p>
+            <p>Subject: <input data-bind="value: subject" /></p>
+            <p>Your question: <textarea rows="5" data-bind="value: content"></textarea></p>
+            <p><button data-bind="click: submit">Submit</button></p>         
+        </div>
+        
+        <script src="ContactForm.js"></script>
+       
+    </body>
+
+</html>
